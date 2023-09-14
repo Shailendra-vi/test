@@ -2,8 +2,7 @@ const express = require('express')
 const app = express();
 
 app.get('/',(req,res)=>{
-    console.log(req.socket.remoteAddress);
-    res.send('Hello')
+    res.send(req.socket.remoteAddress);
 })
 
 app.listen(3000);
